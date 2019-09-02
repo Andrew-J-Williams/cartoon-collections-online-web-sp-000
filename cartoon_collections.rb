@@ -23,7 +23,7 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
 
-  array.detect {|food| cheese_types.include?(food)} # First, we use our detect method to iterate over our array of items.
+  cheese_types.detect {|cheese| array.include?(cheese)} # First, we use our detect method to iterate over our array of items.
   # Second, we check our cheese array to see if any of the other array items are included in the cheese array.
   # If the item from the array matches one of the cheeses, the detect method will return the first element that makes the statement true.
   # If no item matches any element from the cheese array, the value of 'nil' is returned.
